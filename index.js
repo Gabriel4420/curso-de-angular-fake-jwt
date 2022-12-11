@@ -29,6 +29,4 @@ app.post("/sign", (req, res) => {
   res.status(500).json({ message: "Usuário ou senha incorreta" });
 });
 
-app.listen(port, () => {
-  console.log(`Link => http://localhost:${port}`);
-});
+app.listen(port, () => console.log(`Link => http://localhost:${port}`));
